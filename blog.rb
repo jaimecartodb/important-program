@@ -11,7 +11,7 @@ class Blog
 		@post_list << post
 	end
 
-	def compost_post post
+	def compose_post post
 		post_var = ''
 		post_var += post.sponsored ? "******#{post.title}******".colorize(:red) : post.title
 		post_var += "\n**************\n#{post.text}\n----------------\n"			
